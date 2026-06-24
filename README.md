@@ -39,7 +39,7 @@
 ```bash
 # 获取项目代码
 git clone git@github.com:mrgaoshuiquan/English-learning.git
-cd your-repo-name
+cd 你的目录
 
 # 安装依赖项
 npm install
@@ -64,7 +64,7 @@ npm run dev
 
 ## 🤝 关于作者 & 问题反馈
 
-本项目由 **高水泉** 独立设计与开发。如果您在使用过程中遇到任何问题，或有好的建议，欢迎通过以下方式交流：
+本项目由 **[mrgaoshuiquan](https://www.gaoops.com)** 独立设计与开发。如果您在使用过程中遇到任何问题，或有好的建议，欢迎通过以下方式交流：
 
 - 🌐 **个人博客**：[https://www.gaoops.com](https://www.gaoops.com)
 - 💬 **问题反馈 board**：[点击留言反馈](https://www.gaoops.com/messageboard/)
@@ -73,4 +73,4 @@ npm run dev
 
 ## 📄 许可证
 
-Made with ❤️ by [高水泉](https://www.gaoops.com).
+Made with ❤️ by [mrgaoshuiquan](https://www.gaoops.com).
