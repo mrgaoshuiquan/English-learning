@@ -1,0 +1,6 @@
+{
+  "name": "EchoScene",
+  "description": "情景英语口语练习 Web App - 先阅读情景，再开口对练",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
