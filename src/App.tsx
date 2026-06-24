@@ -13,6 +13,7 @@ import { PreviewView } from './components/PreviewView';
 import { PracticeView } from './components/PracticeView';
 import { FeedbackView } from './components/FeedbackView';
 import { SavedPhrasesModal } from './components/SavedPhrasesModal';
+import { Footer } from './components/Footer';
 
 type ViewMode = 'home' | 'preview' | 'practice' | 'feedback';
 
@@ -109,6 +110,8 @@ export default function App() {
           />
         )}
       </main>
+
+      <Footer />
 
       {showPhrasesModal && (
         <SavedPhrasesModal
