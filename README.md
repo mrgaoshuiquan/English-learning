@@ -65,6 +65,7 @@ npm run dev
 ### 5. 部署到公网方法
 fork本仓库
 会自动识别出这是Vite 项目，通常参数设置如下
+
 框架
 ```bash
 vite
@@ -73,7 +74,10 @@ vite
 ```bash
 npm run build
 ```
-输入目录：dist
+输入目录：
+```bash
+dist
+```
 
 ---
 
