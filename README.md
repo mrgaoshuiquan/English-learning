@@ -79,7 +79,8 @@ npm run build
 dist
 ```
 填入环境变量：GEMINI_API_KEY （或 VITE_GEMINI_API_KEY）  Value 输入：AI_Studio里生成的真实密钥 
-**提示**：您可以在 [Google AI Studio](https://aistudio.google.com/) 免费申请 Gemini API Key。
+
+提示：您可以在 [Google AI Studio](https://aistudio.google.com/) 免费申请 Gemini API Key。
 ---
 
 ## 🤝 关于作者 & 问题反馈
