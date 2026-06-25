@@ -62,6 +62,21 @@ npm run dev
 
 ---
 
+### 5. 部署到公网方法
+fork本仓库
+会自动识别出这是Vite 项目，通常参数设置如下
+框架
+```bash
+vite
+```
+构建命令
+```bash
+npm run build
+```
+输入目录：dist
+
+---
+
 ## 🤝 关于作者 & 问题反馈
 
 本项目由 **[mrgaoshuiquan](https://www.gaoops.com)** 独立设计与开发。如果您在使用过程中遇到任何问题，或有好的建议，欢迎通过以下方式交流：
