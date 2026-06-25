@@ -22,7 +22,7 @@ export const Navbar: React.FC<NavbarProps> = ({ stats, onOpenSavedPhrases, onGoH
           </div>
           <div>
             <h1 className="font-bold text-lg tracking-tight text-slate-900 flex items-center gap-1">
-              英语<span className="text-indigo-600">Scene</span>
+              Echo<span className="text-indigo-600">Scene</span>
             </h1>
             <p className="text-[10px] uppercase font-semibold text-slate-400 tracking-wider">情景口语教练</p>
           </div>

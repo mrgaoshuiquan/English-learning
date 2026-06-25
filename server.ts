@@ -1,11 +1,9 @@
 import express from 'express';
 import path from 'path';
-import { fileURLToPath } from 'url';
 import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI } from '@google/genai';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = process.cwd();
 
 let genAIClient: GoogleGenAI | null = null;
 function getGenAI() {
@@ -25,9 +23,14 @@ async function startServer() {
 
   app.use(express.json());
 
-  // Health check
+  // Health check & API Key status
   app.get('/api/health', (req, res) => {
-    res.json({ status: 'ok', time: new Date().toISOString() });
+    const hasKey = !!process.env.GEMINI_API_KEY && process.env.GEMINI_API_KEY.trim().length > 0;
+    res.json({ 
+      status: 'ok', 
+      apiKeyConfigured: hasKey,
+      time: new Date().toISOString() 
+    });
   });
 
   // Chat endpoint for roleplay

@@ -94,7 +94,14 @@ export const PracticeView: React.FC<PracticeViewProps> = ({ scene, onFinish, onC
         })
       });
 
-      const data = await response.json();
+      const rawText = await response.text();
+      let data: any;
+      try {
+        data = JSON.parse(rawText);
+      } catch (e) {
+        throw new Error(`请求失败 (${response.status})：接口未返回有效JSON`);
+      }
+
       if (!response.ok) {
         throw new Error(data.error || 'Failed to get response');
       }

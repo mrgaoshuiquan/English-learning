@@ -48,9 +48,16 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({
           })
         });
 
-        const data: FeedbackReport = await response.json();
+        const rawText = await response.text();
+        let data: any;
+        try {
+          data = JSON.parse(rawText);
+        } catch (e) {
+          throw new Error(`后端接口异常（状态码 ${response.status}）：未返回有效JSON数据`);
+        }
+
         if (!response.ok) {
-          throw new Error((data as any).error || "Failed to generate report");
+          throw new Error(data?.error || `服务器请求失败 (${response.status})`);
         }
 
         setReport(data);

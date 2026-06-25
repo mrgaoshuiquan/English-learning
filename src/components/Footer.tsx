@@ -4,10 +4,10 @@ import { Github, Globe, Heart, MessageSquare } from 'lucide-react';
 export const Footer: React.FC = () => {
   // 👇 您可以在这里方便地修改您的个人信息链接
   const myInfo = {
-    name: "MR'Gao", // 您的签名/名字
+    name: "高水泉", // 您的签名/名字
     blogUrl: "https://www.gaoops.com", // 您的博客网址
     feedbackUrl: "https://www.gaoops.com/messageboard/", // 问题反馈网址
-    githubUrl: "https://github.com/mrgaoshuiquan" // 您的 GitHub 网址
+    githubUrl: "https://github.com" // 您的 GitHub 网址
   };
 
   return (
@@ -48,7 +48,7 @@ export const Footer: React.FC = () => {
             className="flex items-center gap-1 hover:text-indigo-600 transition-colors"
           >
             <Github className="w-3.5 h-3.5" />
-            <span>官方仓库</span>
+            <span>GitHub</span>
           </a>
         </div>
       </div>
