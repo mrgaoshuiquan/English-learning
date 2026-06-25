@@ -78,7 +78,7 @@ npm run build
 ```bash
 dist
 ```
-填入环境变量：GEMINI_API_KEY （或 VITE_GEMINI_API_KEY）  Value 输入：AI_Studio里生成的真实密钥（不设置API_KEY无法使用打分和智能回复功能）
+填入环境变量：GEMINI_API_KEY （或 VITE_GEMINI_API_KEY）  Value：填写生成的真实密钥（不设置API_KEY无法使用打分和智能回复功能）
 
 📢提示：您可以在 [Google AI Studio](https://aistudio.google.com/) 免费申请 Gemini API Key。
 
